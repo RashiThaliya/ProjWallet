@@ -1,0 +1,9 @@
+{
+    "transaction": null,
+    "name": "Rashi",
+    "wallet_Ammount": 0.0,
+    "email_id": "rashit@gmail.com",
+    "adhar_Number": "1111-2222-3333",
+    "wallet_Pin": "1015",
+    "mobile_Number": "8087090595"
+}

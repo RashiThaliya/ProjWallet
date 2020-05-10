@@ -1,0 +1,71 @@
+body {
+    padding-top:200px;
+}
+fieldset {
+    border: thin solid #ccc; 
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #fbfbfb;
+}
+legend {
+   color: #678;
+}
+.form-control {
+    width: 95%;
+}
+label small {
+    color: #678 !important;
+}
+span.req {
+    color:maroon;
+    font-size: 112%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.671);
+    max-width: 100px;
+    margin: auto;
+    text-align: center;
+  }
+  th, td {
+    padding: 20px;
+  }
+  h1,h2{
+    color: rgb(119, 58, 138);
+    text-align: center;
+    font-size: 15px;
+    padding: 8px;
+    
+  }
+  
+  .title {
+    color: grey;
+    font-size: 10px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(58, 135, 138);
+    background-color: rgb(149, 246, 125);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  /* a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  } */
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+

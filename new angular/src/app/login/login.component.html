@@ -1,0 +1,54 @@
+
+
+<br><br>
+<div class="col-lg-7 col-md-7">
+    <h3 class="text-primary">Login</h3>
+    <br>
+
+   
+    <form [formGroup]="loginForm" (ngSubmit)="verifyLogin()">
+        <div class="form-group">
+            <label for="mobileNo">Phone number : </label>
+            <input type="number" class="form-control" formControlName="mobileNo" placeholder="Enter mobileNo number"/>
+
+            <div *ngIf="submitted && loginForm.controls.mobileNo.errors" class="error">
+                    <div class="text-danger" *ngIf="loginForm.controls.mobileNo.errors.required">
+                        mobileNo is Required..
+                    </div>
+                    <div class="text-danger" *ngIf="loginForm.controls.mobileNo.errors.pattern">
+                        Only Integer Expected
+                    </div>
+                </div>
+
+        </div>  <!-- End Of email -->
+
+
+        <div class="form-group">
+            <label for="password">Password : </label>
+            <input type="number" class="form-control" formControlName="walletPin" placeholder="Password"/>
+            <!-- *ngIf, *ngFor, *ngSwitch -->
+            <div *ngIf="submitted && loginForm.controls.walletPin.errors" class="error">
+                <div class="text-danger" *ngIf="loginForm.controls.walletPin.errors.required">
+                    walletPin is Required..
+                </div>
+                <div class="text-danger" *ngIf="loginForm.controls.walletPin.errors.pattern">
+                    Only Integer Expected
+                </div>
+                
+
+            </div>
+        </div>  <!-- End Of walletPin -->
+
+        <button class="btn btn-success">Login</button> &nbsp;
+        
+        
+
+        
+        <div *ngIf="invalidLogin">
+                <div class="text-danger">
+                        Invalid Email or Password
+                </div>
+
+        </div>
+    </form>
+</div>
