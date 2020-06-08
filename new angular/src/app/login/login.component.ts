@@ -40,6 +40,7 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['/home'])
    } 
    else{
+    alert(`Invalid Mobile Number or Pin. Please enter correct credentials.`);
     return;
    }
   

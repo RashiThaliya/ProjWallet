@@ -2,21 +2,21 @@
 
 <br><br>
 <div class="col-lg-7 col-md-7">
-    <h3 class="text-primary">Login</h3>
+    <h3 class="text-primary"><font color="green">Login:</font></h3>
     <br>
 
    
     <form [formGroup]="loginForm" (ngSubmit)="verifyLogin()">
         <div class="form-group">
-            <label for="mobileNo">Phone number : </label>
-            <input type="number" class="form-control" formControlName="mobileNo" placeholder="Enter mobileNo number"/>
+            <label for="mobileNo">Mobile number : </label>
+            <input type="number" class="form-control" formControlName="mobileNo" placeholder="Enter Mobile Number"/>
 
             <div *ngIf="submitted && loginForm.controls.mobileNo.errors" class="error">
                     <div class="text-danger" *ngIf="loginForm.controls.mobileNo.errors.required">
-                        mobileNo is Required..
+                        Mobile No is required
                     </div>
                     <div class="text-danger" *ngIf="loginForm.controls.mobileNo.errors.pattern">
-                        Only Integer Expected
+                        Please enter only valid mobile number
                     </div>
                 </div>
 
@@ -24,31 +24,31 @@
 
 
         <div class="form-group">
-            <label for="password">Password : </label>
-            <input type="number" class="form-control" formControlName="walletPin" placeholder="Password"/>
+            <label for="password">Pin : </label>
+            <input type="password" class="form-control" formControlName="walletPin" placeholder="Enter Pin here"/>
             <!-- *ngIf, *ngFor, *ngSwitch -->
             <div *ngIf="submitted && loginForm.controls.walletPin.errors" class="error">
                 <div class="text-danger" *ngIf="loginForm.controls.walletPin.errors.required">
-                    walletPin is Required..
+                    Pin is required
                 </div>
                 <div class="text-danger" *ngIf="loginForm.controls.walletPin.errors.pattern">
-                    Only Integer Expected
+                    Please enter only digits
                 </div>
                 
 
             </div>
         </div>  <!-- End Of walletPin -->
 
-        <button class="btn btn-success">Login</button> &nbsp;
+        <button class="btn btn-success">login</button> &nbsp;
         
         
 
         
-        <div *ngIf="invalidLogin">
-                <div class="text-danger">
+        
+                <div class="text-danger" *ngIf="invalidLogin">
                         Invalid Email or Password
                 </div>
 
-        </div>
+        
     </form>
 </div>

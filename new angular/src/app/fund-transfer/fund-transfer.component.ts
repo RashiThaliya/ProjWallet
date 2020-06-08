@@ -67,6 +67,9 @@ export class FundTransferComponent implements OnInit {
     }
   }  
 
+  gotoHome(){
+    this.router.navigate(['home'])
+  }
   
 
     }

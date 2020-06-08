@@ -11,10 +11,10 @@ export class HeaderComponent implements OnInit {
   constructor( public loginService:AuthenticationService) { }
 
   ngOnInit(): void {
-    console.log("koni tari sanaga re...11111")
+    console.log("Working 101")
   }
   ngOnChanges(){
-    console.log("koni tari sanaga re...")
+    console.log("Working 102")
   }
 
 }

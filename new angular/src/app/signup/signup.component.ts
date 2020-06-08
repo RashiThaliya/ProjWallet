@@ -37,18 +37,19 @@ export class SignupComponent implements OnInit {
    signupNow(){
     this.submitted = true;
 
-    if (this.addForm.invalid) {
-      return;
-    }
+    // if (this.addForm.invalid) {
+    //   alert(`Invalid`);
+    //   return;
+    // }
 
   console.log(this.addForm.value);
-
+  
   this.service.doSignUp(this.addForm.value).subscribe(data => {
     alert(`${this.addForm.controls.custName.value} record is added successfully..!`);
     this.router.navigate(['login']);
 
-  // }; err => {
-  //    console.log(err.stack);
+   }, err => {
+      console.log(err.stack);
  
    }
   )

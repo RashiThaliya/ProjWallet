@@ -38,4 +38,8 @@ export class BankWithdrawComponent implements OnInit {
     
 
   }
+
+  gotoHome(){
+    this.router.navigate(['home'])
+  }
 }

@@ -37,5 +37,9 @@ export class BankDepositComponent implements OnInit {
     alert("Balance added to your Bank Account");
     this.router.navigate(['home'])
   }
+
+  gotoHome(){
+    this.router.navigate(['home'])
+  }
 }
  
